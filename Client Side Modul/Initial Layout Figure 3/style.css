@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+.container {
+    background-color: rgb(102, 103, 102);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px 15px;
+    width: 40%;
+    color:white;
+}
+
+.container .resume-restart {
+    margin: 2rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.container .resume-restart button {
+    width: 100px;
+    cursor: pointer;
+    padding: 8px 0 ;
+    color:white;
+    border: none;
+    transition: all 100ms ease-in;
+}
+
+.container .resume-restart .resume {
+    background-color: rgb(227,27,94);
+}
+
+.container .resume-restart .resume:hover {
+    background-color: rgb(227,0,34);
+}
+
+.container .resume-restart .restart {
+    background-color: rgb(0, 0, 0);
+}
+.container .resume-restart .restart:hover {
+    background-color: rgb(50,50,50);
+}

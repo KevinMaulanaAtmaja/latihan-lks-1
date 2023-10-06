@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Slayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="Virus.png" id="virus" alt="">
+    <img src="Template-Key.png" id="key" alt="">
+    <canvas id="canvas1"></canvas>
+    <div id="game-instruction">
+        <div class="container">
+            <figure>
+                <img src="favicon.png" alt="Virus Logo" aria-hidden="true" width="100">
+            </figure>
+            <h1 class="title">Virus Slayer</h1>
+
+            <div class="instruction">
+                <h3>Instruction</h3>
+                <ul>
+                    <li>Input Username then Play</li>
+                    <li>Use D F J K key to destroy the virus</li>
+                    <li>Beat your highscore</li>
+                    <li>Enjoy</li>
+                </ul>
+                <input type="text" placeholder="Username" id="username">
+                <button disabled id="play">Play</button>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="paused">
+        <div class="container">
+            <h2>Paused</h2>
+            <div class="resume-restart">
+                <button class="restart">Restart</button>
+                <button id="resume">Resume</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="gameOver">
+        <div class="container">
+            <h2>Game Over</h2>
+            <div class="game-status">
+                <p id="gameOver-time">Time : 03:23</p>
+                <p id="gameOver-score">Score: 22</p>
+                <p id="gameOver-player">Player: Roberto</p>
+            </div>
+            <button class="restart">Restart</button>
+        </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

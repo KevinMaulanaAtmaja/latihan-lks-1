@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-color: oldlace;
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    background-color: white;
+    border-top: 5px solid rgb(250,80,80);
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0 10px;
+    font-size: larger;
+    font-weight: bold;
+    border-bottom: 5px solid oldlace;
+
+}
+
+header a {
+    color: rgb(250,80,80);
+    cursor: pointer;
+}
+
+header p {
+    text-align: center;
+}
+
+header p span {
+    font-size: small;
+    color: black;
+    opacity: 30%;
+}
+.container div {
+    padding: 50px;
+
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+.inactive {
+    opacity: 40%;
+}
+
+.current-day {
+    color: white;
+    background: rgb(250,80,80);
+}
+
+table th {
+    color: rgb(250,80,80);
+}
+
+table td, table th {
+    height: 80px;
+}
+
+td {
+    border: 5px solid oldlace;
+}

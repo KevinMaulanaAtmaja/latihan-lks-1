@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(30,30,30);
+}
+
+img {
+    display: none;
+}
+
+#canvas1 {
+    position:absolute;
+    display: none;
+    background-color: #414042;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(102, 103, 102, 1);
+    padding: 15px 10px;
+    width: 35rem;
+}
+
+#paused {
+    display: none;
+}
+
+/* #game-instruction {
+    display: none;
+} */
+
+.container h2 {
+    text-align: center;
+}
+
+/* .container #paused {
+    text-align: center;
+} */
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.instruction {
+    color: white;
+    padding:0 2rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.instruction ul {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.instruction input {
+    padding: 10px 2px;
+    margin: 1rem;
+}
+
+.instruction input::placeholder {
+    text-align: center;
+    font-weight: bold;
+}
+
+.instruction button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: rgb(217, 27, 94);
+    color: white;
+    border:none;
+    text-align: center;
+    padding: 10px 5px;
+    width: 20rem;
+    transition: all 100ms ease-in-out;
+    align-self: center;
+}
+
+.instruction button:hover {
+    background-color:rgb(217, 0, 34);
+}
+
+.instruction button:disabled {
+    background-color: rgb(134, 0, 22);
+    cursor: default;
+}
+
+
+.container .resume-restart {
+    margin: 2rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.container .resume-restart button {
+    width: 100px;
+    cursor: pointer;
+    padding: 8px 0 ;
+    color:white;
+    border: none;
+    transition: all 100ms ease-in;
+}
+
+.container .resume-restart #resume {
+    background-color: rgb(227,27,94);
+}
+
+.container .resume-restart #resume:hover {
+    background-color: rgb(227,0,34);
+}
+
+.container .resume-restart .restart {
+    background-color: rgb(0, 0, 0);
+}
+.container .resume-restart .restart:hover {
+    background-color: rgb(50,50,50);
+}
+
+#gameOver {
+    display: none;
+}
+
+#gameOver .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gameOver .container .game-status {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#gameOver .container button {
+    margin-top: 2rem;
+    padding: 10px 5px;
+    width: 50%;
+    font-size: 2rem;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

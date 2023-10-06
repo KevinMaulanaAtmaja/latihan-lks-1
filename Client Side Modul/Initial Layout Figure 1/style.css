@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(102, 103, 102, 1);
+    padding: 15px 10px;
+    width: 35rem;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.instruction {
+    color: white;
+    padding:0 2rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.instruction ul {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.instruction input {
+    padding: 10px 2px;
+    margin: 1rem;
+}
+
+.instruction input::placeholder {
+    text-align: center;
+    font-weight: bold;
+}
+
+.instruction button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: rgb(217, 27, 94);
+    color: white;
+    border:none;
+    text-align: center;
+    padding: 10px 5px;
+    width: 20rem;
+    transition: all 100ms ease-in-out;
+    align-self: center;
+}
+
+.instruction button:hover {
+    background-color:rgb(217, 0, 34);
+}
